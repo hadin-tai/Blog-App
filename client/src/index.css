@@ -1,0 +1,35 @@
+/* ✅ main.css */
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import "tailwindcss";
+
+/* Optional: custom base variables */
+:root {
+  --font-sans: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Extend Tailwind base styles (if needed) */
+body {
+  @apply font-sans antialiased text-gray-900 dark:text-white bg-white dark:bg-neutral-900;
+}
+
+a {
+  @apply font-medium text-indigo-600 hover:text-indigo-500 no-underline;
+}
+
+h1 {
+  @apply text-4xl leading-tight;
+}
+
+button {
+  @apply rounded-md border border-transparent px-4 py-2 text-base font-medium bg-gray-800 text-white hover:border-indigo-500 transition;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    @apply text-gray-900 bg-white;
+  }
+}
